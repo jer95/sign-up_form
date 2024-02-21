@@ -9,38 +9,43 @@
 <body>
    <section class="divider">
     <div class="intro-container">
-        <h3>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up now to get started.
-            <span class="h2-wrap">You <em>know</em> you want to.</span></h3>
+        <h3><span class="block">This is not a real online service! You know you need something</span><span class="block">like this in your life to help you realise your deepest dreams.</span> <span class="block">Sign up <em>now</em> to get started.</span>
+            <span class="block" style="margin-top: 16px;">You <em>know</em> you want to.</span></h3>
     </div>
-        <form>
+        <form action="" method="post">
+            <h2>Let's do this!</h2>
             <ul class="form-container">
                 <li>
-                    <label for="">First Name</label>
-                    <input type="text">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" minlength="1" maxlength="30" required>
                 </li>
                 <li>
-                    <label for="">Last Name</label>
-                    <input type="text">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" minlength="1" maxlength="30" required>
                 </li>
 
                 <li>
-                    <label for="">Email</label>
-                    <input type="email">
+                    <label for="e-mail">Email</label>
+                    <input type="email" id="e-mail" name="e-mail" required>
                 </li>
                 <li>
-                    <label for="">Phone Number</label>
-                    <input type="tel">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="tel" pattern="[0-9]{3}[ \-.][0-9]{3}[ \-.][0-9]{4}" required>
                 </li>
            
                 <li>
-                    <label for="">Password</label>
-                    <input type="password">
+                    <label for="pwd">Password</label>
+                    <input class="error" type="password" id="pwd" name="password" minlength="8" maxlength="16" required>
                 </li>
                 <li>
-                    <label for="">Confirm Password</label>
-                    <input type="text">
+                    <label for="confirm-pwd">Confirm Password</label>
+                    <input class="error" type="password" id="confirm-pwd" name="confirm-pwd" minlength="8" maxlength="16" required>
                 </li>
             </ul>
+            <div class="login">
+                <button class="submit" type="submit">Create Account</button>
+                <p style="margin-bottom:0px; margin-left:30px;padding:20px;">Already have an account? <span style="color:#596D48;">Log in</span></p>
+            </div>
         </form>
    </section>
 </body>
